@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Student Data"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/firstNameEtx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="50dp"
+        android:hint="First name"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/lastNameEtx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="50dp"
+        android:hint="Last name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/firstNameEtx"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameEtx" />
+
+    <EditText
+        android:id="@+id/rollNoEtx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="50dp"
+        android:hint="Roll No"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/lastNameEtx"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lastNameEtx"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameEtx" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Save"
+        android:textColor="#000000"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/rollNoEtx"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rollNoEtx"
+        app:layout_constraintTop_toBottomOf="@+id/rollNoEtx"
+        app:strokeColor="#000000" />
+
+    <EditText
+        android:id="@+id/rollNoSrEtx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:hint="Search By roll no"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/saveBtn"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/saveBtn"
+        app:layout_constraintTop_toBottomOf="@+id/saveBtn" />
+
+    <Button
+        android:id="@+id/searchBtn"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:text="Search"
+        android:textColor="#000000"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rollNoSrEtx"
+        app:layout_constraintVertical_bias="0.295"
+        app:strokeColor="#000000" />
+
+    <Button
+        android:id="@+id/deleteallBtn"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:text="Delete All"
+        android:textColor="#000000"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/searchBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/searchBtn"
+        app:layout_constraintTop_toTopOf="@+id/searchBtn"
+        app:strokeColor="#000000" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
